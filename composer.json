@@ -1,8 +1,8 @@
 {
-    "name": "danielbachhuber/php-compat-command",
+    "name": "dreamhost/php-compat-command",
     "description": "Scan WordPress, plugins and themes for PHP version compatibility.",
     "type": "wp-cli-package",
-    "homepage": "https://github.com/danielbachhuber/php-compat-command",
+    "homepage": "https://github.com/dreamhost/php-compat-command",
     "license": "MIT",
     "authors": [],
     "minimum-stability": "dev",
