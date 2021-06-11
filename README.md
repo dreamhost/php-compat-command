@@ -1,9 +1,9 @@
-danielbachhuber/php-compat-command
+dreamhost/php-compat-command
 ==================================
 
 Scan WordPress, plugins and themes for PHP version compatibility.
 
-[![Build Status](https://travis-ci.org/danielbachhuber/php-compat-command.svg?branch=master)](https://travis-ci.org/danielbachhuber/php-compat-command)
+Forked from [php-compat-command by Daniel Bachhuber](https://github.com/danielbachhuber/php-compat-command]
 
 Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contributing) | [Support](#support)
 
@@ -17,11 +17,12 @@ Uses the [PHPCompatibility PHPCS sniffs](https://github.com/wimg/PHPCompatibilit
 and interprets the WordPress-specific results. Defaults to '7.0-' for scanning
 PHP 7.0 and above.
 
-If a theme or plugin is compatible, it results with `compat=success`. If
-there's an incompatibility, it results with `compat=failure`.
+If a theme or plugin is compatible, it results with `compat=success`. If there's
+an incompatibility, it results with `compat=failure`.
 
-Speed up the scanning process by using [php-compat-cache](https://github.com/danielbachhuber/php-compat-cache), a collection of pre-scanned WordPress.org
-plugins and themes. If a theme or plugin is known to be compatible with
+Speed up the scanning process by using [php-compat-cache](https://github.com/danielbachhuber/php-compat-cache), a collection of
+pre-scanned WordPress.org plugins and themes. If a theme or plugin is known to
+be compatible with
 an update, it results `compat=with-update`.
 
 **OPTIONS**
@@ -52,8 +53,8 @@ an update, it results `compat=with-update`.
 
 **EXAMPLES**
 
-    # Check compatibility of a WordPress install in the 'danielbachhuber' path
-    $ wp php-compat --path=danielbachhuber
+    # Check compatibility of a WordPress install in the 'example.com' path
+    $ wp php-compat --path=example.com
     +-----------------------+--------+---------+---------+-------+-------+
     | name                  | type   | compat  | version | time  | files |
     +-----------------------+--------+---------+---------+-------+-------+
@@ -69,7 +70,7 @@ an update, it results `compat=with-update`.
 
     # Use php-compat-cache to speed up scanning process
     $ git clone https://github.com/danielbachhuber/php-compat-cache.git ~/php-compat-cache
-    $ WP_CLI_PHP_COMPAT_CACHE=~/php-compat-cache wp php-compat --path=danielbachhuber
+    $ WP_CLI_PHP_COMPAT_CACHE=~/php-compat-cache wp php-compat --path=example.com
     +-----------------------+--------+---------+---------+--------+-------+
     | name                  | type   | compat  | version | time   | files |
     +-----------------------+--------+---------+---------+--------+-------+
@@ -102,29 +103,19 @@ Installing this package requires WP-CLI v2 or greater. Update to the latest stab
 
 Once you've done so, you can install this package with:
 
-    wp package install git@github.com:danielbachhuber/php-compat-command.git
-
-## Contributing
-
-We appreciate you taking the initiative to contribute to this project.
-
-Contributing isn’t limited to just code. We encourage you to contribute in the way that best fits your abilities, by writing tutorials, giving a demo at your local meetup, helping other users with their support questions, or revising our documentation.
-
-For a more thorough introduction, [check out WP-CLI's guide to contributing](https://make.wordpress.org/cli/handbook/contributing/). This package follows those policy and guidelines.
+    wp package install git@github.com:dreamhost/php-compat-command.git
 
 ### Reporting a bug
 
 Think you’ve found a bug? We’d love for you to help us get it fixed.
 
-Before you create a new issue, you should [search existing issues](https://github.com/danielbachhuber/php-compat-command/issues?q=label%3Abug%20) to see if there’s an existing resolution to it, or if it’s already been fixed in a newer version.
+Before you create a new issue, you should [search existing issues](https://github.com/dreamhost/php-compat-command/issues?q=label%3Abug%20) to see if there’s an existing resolution to it, or if it’s already been fixed in a newer version.
 
-Once you’ve done a bit of searching and discovered there isn’t an open or fixed issue for your bug, please [create a new issue](https://github.com/danielbachhuber/php-compat-command/issues/new). Include as much detail as you can, and clear steps to reproduce if possible. For more guidance, [review our bug report documentation](https://make.wordpress.org/cli/handbook/bug-reports/).
+Once you’ve done a bit of searching and discovered there isn’t an open or fixed issue for your bug, please [create a new issue](https://github.com/dreamhost/php-compat-command/issues/new). Include as much detail as you can, and clear steps to reproduce if possible.
 
 ### Creating a pull request
 
-Want to contribute a new feature? Please first [open a new issue](https://github.com/danielbachhuber/php-compat-command/issues/new) to discuss whether the feature is a good fit for the project.
-
-Once you've decided to commit the time to seeing your pull request through, [please follow our guidelines for creating a pull request](https://make.wordpress.org/cli/handbook/pull-requests/) to make sure it's a pleasant experience. See "[Setting up](https://make.wordpress.org/cli/handbook/pull-requests/#setting-up)" for details specific to working on this package locally.
+Want to contribute a new feature? Please first [open a new issue](https://github.com/dreamhost/php-compat-command/issues/new) to discuss if the feature is a good fit for the project.
 
 ## Support
 
